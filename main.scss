@@ -1,0 +1,212 @@
+@import "scss/bootstrap.scss";
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    transition: transform 0.7s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.main-band-kopru {
+    background-image: url(img/main/band/canakkale-koprusu.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav ul li .navButton {
+    color: whitesmoke !important;
+    background: #0071bf !important;
+    border: 2px solid #fe0000 !important;
+    transition: background 0.5s ease-in-out, border 0.7s ease-in-out;
+}
+
+nav ul li .navButton:hover {
+    color: whitesmoke !important;
+    background-color: #fe0000 !important;
+    border: 2px solid #0071bf !important;
+}
+
+nav ul li .navButtonChild:hover {
+    background-color: whitesmoke !important;
+}
+
+.card {
+    box-shadow: $box-shadow;
+    transition: border 0.7s ease, box-shadow 0.7s ease-in-out;
+    perspective: 1000px;
+}
+
+.card:hover {
+    box-shadow: $box-shadow-lg;
+    border: 1px solid $danger !important;
+}
+
+.card-body {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.card-body:hover {
+    background-color: rgba(13, 110, 253, 0.10) !important;
+}
+
+.card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.cardButton {
+    background: linear-gradient(0deg, rgba(0, 113, 191, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%) !important;
+    border: 1px solid #fe0000 !important;
+    color: whitesmoke !important;
+}
+
+.cardButton:hover {
+    background: radial-gradient(circle, rgba(254, 0, 0, 1) 0%, rgba(160, 37, 37, 1) 35%, rgba(69, 0, 0, 1) 100%) !important;
+    border: 1px solid #0071bf !important;
+}
+
+.mainHero {
+    box-shadow: $box-shadow;
+    transition: border 0.7s ease, box-shadow 0.7s ease-in-out;
+}
+
+.mainHero:hover {
+    box-shadow: $box-shadow-lg;
+    border: 1px solid $danger !important;
+}
+
+.mainHero-body {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.mainHero-body:hover {
+    background-color: rgba(13, 110, 253, 0.10) !important;
+}
+
+.mainHero-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.mapContainer {
+    overflow: hidden;
+    padding-bottom: 85%;
+    width: 100%;
+    height: 0;
+    position: relative;
+}
+
+.mapContainer iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    left: 100%;
+    top: -9px;
+}
+
+.dropdown-submenu>a:focus+.dropdown-menu,
+.dropdown-submenu:hover>.dropdown-menu,
+.dropdown-submenu:active>.dropdown-menu {
+    display: block;
+}
+
+.solar-components {
+    z-index: 1;
+    -moz-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+    cursor: pointer;
+}
+
+.solar-components * {
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+    cursor: pointer;
+}
+
+.solar-components .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #fc5356;
+}
+
+.solar-components .icon i {
+    line-height: 70px;
+}
+
+.solar-components h5 {
+    color: #20247b;
+    width: 100%;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.solar-components:hover h5 {
+    color: #ffffff;
+}
+
+.solar-components:hover p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.solar-components:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    border-radius: 10px;
+    width: 0;
+    background: rgb(118, 221, 172);
+    background: linear-gradient(90deg, rgba(118, 221, 172, 1) 1%, rgba(99, 212, 182, 1) 50%, rgba(12, 173, 225, 1) 100%);
+    z-index: -1;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+}
+
+.solar-components:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    left: 0;
+    right: auto;
+}
+
+.solar-modal-header .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #fc5356;
+}
+
+.owl-nav {
+    display: none;
+}
