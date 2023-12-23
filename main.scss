@@ -1,5 +1,10 @@
 @import "scss/bootstrap.scss";
 
+.headerBand {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(254, 61, 61, 0.3) 10%, rgba(254, 25, 25, 0.45) 25%, rgba(254, 0, 0, 0.6) 40%, rgba(254, 0, 0, 0.6) 60%, rgba(254, 25, 25, 0.45) 75%, rgba(254, 61, 61, 0.3) 90%, rgba(255, 255, 255, 0.2) 100%);
+}
+
 .image-container {
     overflow: hidden;
 }
