@@ -11972,6 +11972,21 @@ textarea.form-control-lg {
   }
 }
 
+.rabel-navbar-menu .nav-item .nav-link {
+  color: #fe0000;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.rabel-navbar-menu .nav-item .nav-link:hover {
+  color: #0071bf;
+}
+.rabel-navbar-menu .nav-item .nav-link:focus {
+  color: #0071bf;
+}
+.rabel-navbar-menu .nav-item .nav-link:focus:hover {
+  color: #557e9b;
+}
+
 .headerBand {
   background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(254, 61, 61, 0.3) 10%, rgba(254, 25, 25, 0.45) 25%, rgba(254, 0, 0, 0.6) 40%, rgba(254, 0, 0, 0.6) 60%, rgba(254, 25, 25, 0.45) 75%, rgba(254, 61, 61, 0.3) 90%, rgba(255, 255, 255, 0.2) 100%);
@@ -11980,22 +11995,20 @@ textarea.form-control-lg {
 .image-container {
   overflow: hidden;
 }
-
 .image-container img {
   transition: transform 0.7s ease-in-out;
 }
-
 .image-container img:hover {
   transform: scale(1.1);
 }
 
 .main-band-kopru {
   background-image: url(img/main/band/canakkale-koprusu.jpeg);
-  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 nav ul li .navButton {
@@ -12004,13 +12017,11 @@ nav ul li .navButton {
   border: 2px solid #fe0000 !important;
   transition: background 0.5s ease-in-out, border 0.7s ease-in-out;
 }
-
 nav ul li .navButton:hover {
   color: whitesmoke !important;
   background-color: #fe0000 !important;
   border: 2px solid #0071bf !important;
 }
-
 nav ul li .navButtonChild:hover {
   background-color: whitesmoke !important;
 }
@@ -12020,34 +12031,28 @@ nav ul li .navButtonChild:hover {
   transition: border 0.7s ease, box-shadow 0.7s ease-in-out;
   perspective: 1000px;
 }
-
 .card:hover {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   border: 1px solid #dc3545 !important;
 }
-
-.card-body {
+.card .card-body {
   transition: background-color 0.5s ease-in-out;
 }
-
-.card-body:hover {
+.card .card-body:hover {
   background-color: rgba(13, 110, 253, 0.1) !important;
 }
-
-.card-text {
+.card .card-text {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-
-.cardButton {
+.card .cardButton {
   background: linear-gradient(0deg, rgb(0, 113, 191) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%) !important;
   border: 1px solid #fe0000 !important;
   color: whitesmoke !important;
 }
-
-.cardButton:hover {
+.card .cardButton:hover {
   background: radial-gradient(circle, rgb(254, 0, 0) 0%, rgb(160, 37, 37) 35%, rgb(69, 0, 0) 100%) !important;
   border: 1px solid #0071bf !important;
 }
@@ -12056,25 +12061,30 @@ nav ul li .navButtonChild:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transition: border 0.7s ease, box-shadow 0.7s ease-in-out;
 }
-
 .mainHero:hover {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   border: 1px solid #dc3545 !important;
 }
-
-.mainHero-body {
+.mainHero .mainHero-body {
   transition: background-color 0.5s ease-in-out;
 }
-
-.mainHero-body:hover {
+.mainHero .mainHero-body:hover {
   background-color: rgba(13, 110, 253, 0.1) !important;
 }
-
-.mainHero-text {
+.mainHero .mainHero-text {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
+}
+.mainHero .cardButton {
+  background: linear-gradient(0deg, rgb(0, 113, 191) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%) !important;
+  border: 1px solid #fe0000 !important;
+  color: whitesmoke !important;
+}
+.mainHero .cardButton:hover {
+  background: radial-gradient(circle, rgb(254, 0, 0) 0%, rgb(160, 37, 37) 35%, rgb(69, 0, 0) 100%) !important;
+  border: 1px solid #0071bf !important;
 }
 
 .mapContainer {
@@ -12084,7 +12094,6 @@ nav ul li .navButtonChild:hover {
   height: 0;
   position: relative;
 }
-
 .mapContainer iframe {
   left: 0;
   top: 0;
@@ -12096,15 +12105,11 @@ nav ul li .navButtonChild:hover {
 .dropdown-submenu {
   position: relative;
 }
-
-.dropdown-submenu > .dropdown-menu {
+.dropdown-submenu .dropdown-menu {
   left: 100%;
   top: -9px;
 }
-
-.dropdown-submenu > a:focus + .dropdown-menu,
-.dropdown-submenu:hover > .dropdown-menu,
-.dropdown-submenu:active > .dropdown-menu {
+.dropdown-submenu:focus + .dropdown-menu, .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu:active > .dropdown-menu {
   display: block;
 }
 
@@ -12113,38 +12118,31 @@ nav ul li .navButtonChild:hover {
   transition: ease all 0.35s;
   cursor: pointer;
 }
-
 .solar-components * {
   transition: ease all 0.35s;
   cursor: pointer;
 }
-
 .solar-components .icon {
   width: 70px;
   height: 70px;
   line-height: 70px;
   background: #fc5356;
 }
-
 .solar-components .icon i {
   line-height: 70px;
 }
-
 .solar-components h5, .solar-components .h5 {
   color: #20247b;
   width: 100%;
   font-size: 16px;
   overflow: hidden;
 }
-
-.solar-components:hover h5, .solar-components:hover .h5 {
+.solar-components h5:hover, .solar-components .h5:hover {
   color: #ffffff;
 }
-
 .solar-components:hover p {
   color: rgba(255, 255, 255, 0.8);
 }
-
 .solar-components:after {
   content: "";
   position: absolute;
@@ -12154,13 +12152,11 @@ nav ul li .navButtonChild:hover {
   right: 0;
   border-radius: 10px;
   width: 0;
-  background: rgb(118, 221, 172);
   background: linear-gradient(90deg, rgb(118, 221, 172) 1%, rgb(99, 212, 182) 50%, rgb(12, 173, 225) 100%);
   z-index: -1;
   transition: ease all 0.35s;
 }
-
-.solar-components:hover:after {
+.solar-components:after:hover {
   width: 100%;
   height: 100%;
   border-radius: 10px;
