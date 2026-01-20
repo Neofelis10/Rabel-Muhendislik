@@ -12114,54 +12114,45 @@ nav ul li .navButtonChild:hover {
 }
 
 .solar-components {
+  position: relative;
   z-index: 1;
-  transition: ease all 0.35s;
-  cursor: pointer;
-}
-.solar-components * {
-  transition: ease all 0.35s;
-  cursor: pointer;
-}
-.solar-components .icon {
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  background: #fc5356;
-}
-.solar-components .icon i {
-  line-height: 70px;
-}
-.solar-components h5, .solar-components .h5 {
-  color: #20247b;
-  width: 100%;
-  font-size: 16px;
   overflow: hidden;
 }
-.solar-components h5:hover, .solar-components .h5:hover {
-  color: #ffffff;
-}
-.solar-components:hover p {
-  color: rgba(255, 255, 255, 0.8);
+.solar-components:hover, .solar-components:focus {
+  cursor: pointer;
 }
 .solar-components:after {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  left: auto;
   right: 0;
-  border-radius: 10px;
   width: 0;
   background: linear-gradient(90deg, rgb(118, 221, 172) 1%, rgb(99, 212, 182) 50%, rgb(12, 173, 225) 100%);
-  z-index: -1;
-  transition: ease all 0.35s;
-}
-.solar-components:after:hover {
-  width: 100%;
-  height: 100%;
+  transition: all 0.35s ease;
   border-radius: 10px;
+  z-index: 0;
+}
+.solar-components:hover:after {
+  width: 100%;
   left: 0;
   right: auto;
+}
+.solar-components > * {
+  position: relative;
+  z-index: 2;
+}
+
+.icon {
+  position: relative;
+  z-index: 3;
+  background: #fc5356;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+}
+.icon i {
+  line-height: 70px;
 }
 
 .solar-modal-header .icon {
